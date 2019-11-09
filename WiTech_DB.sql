@@ -34,7 +34,8 @@ CREATE TABLE Members (
     DietType varchar(25), 
     CafeteriaNo int,
     FOREIGN KEY (CafeteriaNo) REFERENCES Cafeteria(CafeteriaID),
-    DateOfBirth date NOT NULL
+    DateOfBirth date NOT NULL,
+    Password varchar(255) NOT NULL
     );
 
 CREATE TABLE Activity (
